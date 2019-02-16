@@ -1,0 +1,47 @@
+input.ng-dirty.ng-invalid {
+  border: 1px solid red;
+}
+
+
+.container {
+  box-shadow: rgba(0,0,0,.24) 0px 2px 2px, rgba(0,0,0,.12) 0px 0px 2px;
+  border: 1px solid rgba(0,0,0,.03);
+  background-color: whitesmoke;
+}
+
+form {
+  display: flex;
+}
+
+table {
+  align: center;
+  width: 100%;
+}
+
+.container
+{
+  position: auto;
+
+  margin: 5% auto;
+  height: 120px;
+  width: 800px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+  position: auto;
+  box-sizing: border-box;
+  width: 800px;
+  height: 100px;
+}
+
+h1
+{
+  margin: 0 0 5px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+

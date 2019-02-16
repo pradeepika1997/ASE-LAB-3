@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="left-box">
+  <form class="form-horizontal" [formGroup]="searchRecipeForm" (ngSubmit)="getRecipeDetails()">
+    <table class="table">
+      <tr>
+        <td>
+          <div class="form-group col-md-8 is-invalid " [ngClass]="{'has-error': searchRecipeForm.controls.recipeName.errors }">
+            <label for="recipeName">Search Recipe</label>
+            <input id="recipeName" type="text" class="form-control is-invalid " formControlName="recipeName" placeholder="Whole Chicken">
+            <app-control-messages [control]="searchRecipeForm.controls.recipeName" class="invalid-feedback"></app-control-messages>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <br>
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </td>
+        <td>
+      </tr>
+    </table>
+  </form>
+  </div>
+</div>
+<br>
+
+<div class="display_recipe_details">
+  <app-display-recipe-details [recipeDetails]="recipeDetails"></app-display-recipe-details>
+</div>
